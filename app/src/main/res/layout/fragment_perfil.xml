@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgVPerfil"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/nandito"
+                android:layout_centerHorizontal="true"
+                android:elevation="3dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    app:contentPaddingRight="15dp"
+                    app:contentPaddingLeft="15dp"
+                    app:contentPaddingTop="15dp"
+                    app:contentPaddingBottom="15dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txtVPerfil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nandito De La Vega"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_marginTop="60dp"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/txtVPuesto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trasladista"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="30dp">
+                    <LinearLayout
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1">
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CONFIGURACIÓN DE LA CUENTA"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Separador"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtVIPersonal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información personal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="25dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Separador"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtVIEmpleado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información empresarial"
+                        android:textSize="18sp"
+                        android:layout_marginTop="25dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Separador"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtVRProblema"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reportar un problema"
+                        android:textSize="18sp"
+                        android:layout_marginTop="25dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Separador"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:background="@drawable/btn_bg_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CERRAR SESIÓN"
+                        android:layout_gravity="center"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="100dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

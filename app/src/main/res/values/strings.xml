@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mexitours</string>
+    <string name="title_activity_home_menu">homeMenu</string>
+    <string name="title_home2">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_tours">Tours</string>
+    <string name="title_qr">Lector QR</string>
+    <string name="title_transfers">Transfer</string>
+    <string name="title_user">Perfil</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <!--<string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">AIzaSyCSLFWa1L8aCp9tLuinEDd4avWN3wrEXbo</string> -->
+</resources>

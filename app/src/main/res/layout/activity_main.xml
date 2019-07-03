@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical"
+    tools:context="app.com.mexitours.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerInParent="true">
+        
+        <ImageView
+            android:id="@+id/logomexi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mexi_logo"
+            android:adjustViewBounds="true"
+            android:scaleType="center"/>
+        
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/logomexi">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Iniciar Sesión"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:id="@+id/linlay1"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLogin"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usuario y Correo"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                    
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/et_bg"
+                        android:id="@+id/etxtUsuario"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contraseña"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/et_bg"
+                        android:id="@+id/etxtPass"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkTerms"
+                android:layout_below="@+id/linlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="32dp"
+                android:buttonTint="@color/white"
+                android:text="Recordar usuario y contraseña" />
+            
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/checkTerms"
+                android:text="Entrar"
+                android:textAllCaps="false"
+
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"/>
+
+            <ProgressBar
+                android:id="@+id/pbCarga"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rellay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="Olvide mi contraseña"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+
+</RelativeLayout>

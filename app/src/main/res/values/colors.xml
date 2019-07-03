@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimaryDark">#642521</color> -->
+    <color name="colorPrimary">#642521</color> -->
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#642521</color>
+    <color name="gradStop">#000000</color>
+    <color name="gradStop2">#332F2F</color>
+
+    <color name="MexiRojo">#642521</color>
+    <color name="MexiRosa2">#F44336</color>
+    <color name="MexiRosa2_1">#F2F54A3D</color>
+    <color name="MexiRosa">#B74132</color>
+    <color name="Naranja">#D1A23E</color>
+    <color name="Separador">#77000000</color>
+    <color name="Separador2">#03F4E0</color>
+    <color name="CardViewTransfers">#E53935</color>
+
+    <color name="MexiRojoTrans">#94642521</color>
+
+</resources>
